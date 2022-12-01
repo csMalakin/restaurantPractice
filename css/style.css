@@ -1,0 +1,481 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+h1, h2 , h3 , h4 , h5 , h6 {
+  font-family: 'Libre Bodoni', serif;
+  font-weight: 700;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2.5rem;
+  margin: 15px 0 45px 0;
+}
+h5 {
+  font-weight: 400;
+}
+h3, h5 {
+  margin: 15px 0;}
+
+.button {
+  background-color: #ff8400;
+  color: white;  
+  text-decoration: none;
+  font-size: 0.7em;  
+  display: inline-block;
+}
+
+.text_yellowBold {
+  color: #ff8400;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.text_center{
+  text-align: center;
+}
+
+img {
+  display: block;
+}
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+.grid50-50 {
+  float: left;
+  width: 50%;
+  text-align: left;
+}
+
+
+
+
+
+/******************************************
+/* Module
+/*******************************************/
+
+
+header {
+height: 125px;
+background-color: transparent;
+
+margin-bottom: -100px;
+}
+header>*{
+  height: 100%;
+  padding: 20px 50px;
+ 
+}
+header *{
+  float: left;  
+}
+.headerLogo {
+ width: 30%;
+ padding: 0 10%;
+}
+
+.navigation .icons{
+  padding-left: 5%;
+}
+.fa-cart-shopping, .fa-magnifying-glass {
+  text-decoration: none;
+  color: #000;
+  text-align: center;
+  
+}
+
+.logoImage {
+  height: 50px;
+  width: 50px;
+ 
+  
+}
+.navigation {
+  width: 70%;
+  
+  
+  
+}
+.navigation ul {
+  width: 100%;
+  
+  
+  
+}
+.navigation li {
+  padding-left: 0;
+  padding-right: 20px;
+  width: 12.5%;
+  
+ 
+}
+.navigation img {
+  padding-left: 40px;
+  max-width: 25px;
+ 
+}
+
+/******************************************
+/* State
+/*******************************************/
+
+.orderOnline li:hover {
+  color: #ff8400;
+  border-bottom: 3px solid #ff8400;
+}
+
+.orderOnline a:hover {
+  color: #ff8400;
+  
+}
+
+
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+.welcome {
+  padding: 250px 35% 150px 60px;
+  margin-top: -150px;  
+  background-image: url("../images/welcome-bkgrd-img.jpg");
+  background-size: cover;
+  height: 100vh;
+  
+}
+
+.welcome_inputHeight{
+  margin: 25px 0;
+  display: inline-block;
+  height: 50px;
+  width: 75%;
+}
+.welcome_input {
+  display: inline-block;
+  height: 100%;
+
+  width: 75%;
+  
+  border-radius: 5px 0px 0px 5px;
+  border: transparent;
+}
+
+.welcome_button {
+  width: 25%;
+  vertical-align: top;
+  padding-top: 20px;
+  padding-left: 25px;
+  height: 100%;
+  border-radius: 0px 5px 5px 0;
+ 
+}
+
+.welcome_socials {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 60px;
+  
+}
+.welcome_socials li {
+  float: left;
+  padding-right: 30px;
+}
+
+.aboutUs {
+  padding: 60px 35%;
+  background-image: url("../images/faded-pie-img.jpg"), url("../images/faded-oatmeal-img.png");
+    background-position: left -22rem top, right -5em top 10em;
+    background-repeat: no-repeat;
+    background-size: 50%,25%;
+}
+
+.aboutUs h2 {
+  margin: 10px 0;
+}
+
+.aboutUs p {
+  margin: 20px 0;
+  font-size: 1.3em;
+}
+.aboutUs_button {
+  width: 15em;
+  height:2.5em;
+  padding-top: 8px;
+  border-radius: 5px;
+  text-align: center;
+   
+}
+
+
+
+.orderOnline {
+  text-align: center;
+  padding: 100px 0;
+  background-color: #eff3f6;
+  
+  }
+
+  .orderOnline a {
+    text-decoration: none;
+    color: darkgrey;
+  }
+.orderOnline ul {
+  display: inline-block;
+  margin-bottom: 50px;
+ 
+}
+.orderOnline li {
+  padding-left: 30px;
+  float: left;
+  text-align: center;
+  border-bottom: 3px solid darkgrey;
+  padding-right: 30px;
+}
+
+.orderOnline h2 {
+  margin: 15px 0 25px 0;
+}
+.flexboxContainer {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+align-items: flex-start;
+gap: 1%;
+padding: 10px 75px;
+
+}
+.flexboxItem span {
+  display: block;
+  padding-top: 25px 
+}
+.flexboxItem img{
+  padding-top: 25px;
+  max-width: 100%;
+  margin:auto
+}
+.flexboxItem {
+  flex-basis: 24%;  
+  flex-grow: 1;
+  min-width: 150px;
+ 
+  text-align: center;
+
+}
+.flexboxContainer button{
+  margin-top: 15px;
+  background-color: #ff8400;
+  border-radius: 1em;
+  color: white;
+  font-size: 1.1em;
+  border: none;
+  line-height: 2;
+  
+}
+.flexboxContainer button:hover{
+  margin-top: 15px;
+  background-color: #ffbb00;
+  border-radius: 1em;
+  color: white;
+  font-size: 1.1em;
+  border: none;
+  line-height: 2;
+  cursor: pointer;
+  
+}
+
+/* .imageContainer {
+  margin: 0 ;
+  padding: 10px 40px;
+  width: 100%;
+  
+}
+.orderOnline img {
+  margin: 10px 0;
+  padding: 10px;
+  display: inline-block;
+  width: 25%;
+  height: 200px;
+  
+} */
+
+.openingHours {
+  background-color: aquamarine;
+  padding: 60px 0;  
+}
+.openingHours span {
+  margin-top: 10px;
+  display: block;
+}
+.padInside {
+  padding-left: 100px;
+  margin-top: 30px;
+}
+.openingHours img {
+  height: 50px;
+  width: 50px;
+  margin:0 auto;
+}
+
+.video {
+  background-color: green;
+  height: 400px;
+
+}
+.video .center {
+  display: block;
+  
+  margin: 0 auto;
+  padding-top: 75px;
+}
+.testimonials {
+  background-color: rgb(255, 198, 112);
+  padding: 60px 0;  
+}
+.testimonials .customer {
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+  height: 100px;
+  width: auto;
+}
+.testimonials span {
+  display: block;
+}
+.name {
+  padding-top: 15px;
+  font-size:1.5em;
+}
+.role{
+  padding-top: 5px;
+  font-size: 0.8em;
+  margin-bottom: 25px;
+}
+
+.rating {
+  height: 35px;
+  width: 100%;
+
+}
+
+.testimonials p {
+  font-style: italic;
+  line-height: 2;
+  padding: 0 60px;
+}
+
+
+
+
+
+
+
+/*------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+/*BACKGROUND IMAGES*/
+
+.hours {
+	background-image: 
+	linear-gradient(
+		rgba(255, 255, 255, 0.6), 
+		rgba(255, 255, 255, 0.6)
+	),
+	url('https://cdn.glitch.global/3252c516-8b89-4786-963b-8fd3c2b8b877/faded-cups-bkgrd.jpg?v=1650331345796');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+  padding: 10%;
+  text-align: center;
+}
+
+.videos {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	width: 80%;
+  margin: auto;
+}
+.videos video {
+	width: 80%;
+}
+
+.fa-circle-chevron-left {
+	padding-right: clamp(0.5rem, 1vw, 3rem);
+  font-size: clamp(3rem, 10vw, 3rem);
+  color: #ff8400;
+}
+.fa-circle-chevron-right {
+	padding-left: clamp(0.5rem, 1vw, 3rem);
+  font-size: clamp(3rem, 10vw, 3rem);
+  color: #ff8400;
+}
+
+.schedule{
+  text-align: center;
+  font-weight: bold;
+  display: inline-block;
+  width: 100%;
+}
+
+.schedule > * {
+  display:inline-block;
+  width:40%;
+  padding-bottom: 2em;
+}
+
+.fa-phone{
+  color: #ff8400;
+  margin: 15px 0;
+  font-size: 3em;
+}
+
+.rating {
+  color: #ff8400;
+}
+
+@media all and (max-width:800px){
+.aboutUs{
+  padding: 5%;
+  margin:0;
+}
+
+.aboutUs > *{
+  width: 100%;
+  
+}
+.navigation, .welcome_button{
+  display: none;
+}
+
+
+}
